@@ -30,8 +30,8 @@ from slicer.ScriptedLoadableModule import (
 # Model weights: fill in after uploading best_net_G_A.pth as a GitHub release asset (see README)
 # ---------------------------------------------------------------------------------------------
 WEIGHTS_FILENAME = 'best_net_G_A.pth'
-WEIGHTS_URL = 'https://github.com/YOUR_GITHUB_USER/SlicerMRtoCT/releases/download/v1.0/best_net_G_A.pth'
-WEIGHTS_SHA256 = ''   # output of: sha256sum best_net_G_A.pth   (empty = not checked)
+WEIGHTS_URL = 'https://github.com/kgiraldo09/SlicerMRtoCT/releases/download/v1.0/best_net_G_A.pth'
+WEIGHTS_SHA256 = 'bedb611875983a7db58a0b1ff65efeef1fb595dd6cfd0f53292015fb8a87a989'
 WEIGHTS_SIZE_MB = 145
 
 LICENSE_SETTINGS_KEY = 'MRtoCT/LicenseAccepted'
@@ -224,7 +224,7 @@ class MRtoCTLogic(ScriptedLoadableModuleLogic):
         return cached
 
     def downloadWeights(self, target):
-        if 'YOUR_GITHUB_USER' in WEIGHTS_URL:
+        if 'kgiraldo09' in WEIGHTS_URL:
             raise RuntimeError('WEIGHTS_URL is not set in MRtoCT.py (see README, step 3).')
         os.makedirs(os.path.dirname(target), exist_ok=True)
         partial = target + '.part'
