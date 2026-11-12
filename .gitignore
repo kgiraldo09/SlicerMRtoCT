@@ -1,0 +1,5 @@
+# model weights are published as a GitHub release asset, never committed (GitHub refuses files > 100 MB)
+*.pth
+*.pt
+__pycache__/
+*.pyc
