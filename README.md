@@ -35,7 +35,7 @@ python mr_to_sct.py INPUT OUTPUT_FOLDER     # INPUT: an MR .nii.gz, or a folder 
 
 ## Citation
 
-If you use this extension, please cite: *(add your publication here)*.
+Paper in preparation
 
 ## License
 
